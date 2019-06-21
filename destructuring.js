@@ -10,11 +10,11 @@
 
 // Do not edit the code below.
 var carDetails = {
-  color: 'red',
-  make: 'toyota',
-  model: 'tacoma',
+  color: "red",
+  make: "toyota",
+  model: "tacoma",
   year: 1994
-}
+};
 // Do not edit the code above.
 
 /*
@@ -22,8 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+let { color, make, model, year } = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -33,15 +32,13 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
-  
+function greeting(obj) {
+  let { firstName, lastName, title } = obj;
+
   // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+  return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -54,8 +51,13 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function totalPopulation(obj) {
+  let { utah, california, texas, arizona } = obj;
+  let total = obj.reduce(function(total, val) {
+    return (total += val);
+  }, 0);
+  return totalPopulation;
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -68,8 +70,6 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
 
 ////////// PROBLEM 5 //////////
 
@@ -87,8 +87,6 @@ function greeting( obj ) {
 
 //Code Here
 
-
-
 ////////// PROBLEM 6 //////////
 
 /*
@@ -98,5 +96,3 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
