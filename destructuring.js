@@ -53,10 +53,10 @@ function greeting(obj) {
 //Code Here
 function totalPopulation(obj) {
   let { utah, california, texas, arizona } = obj;
-  let total = obj.reduce(function(total, val) {
-    return (total += val);
-  }, 0);
-  return totalPopulation;
+  // let reduce1 = [utah, california, texas, arizona].reduce(function(total, val) {
+  //   return total + val;
+  // }, 0);
+  return utah + california + texas + arizona;
 }
 
 ////////// PROBLEM 4 //////////
@@ -70,7 +70,10 @@ function totalPopulation(obj) {
 */
 
 //Code Here
-
+function ingredients(obj) {
+  let { carb, fat, protein } = obj;
+  return [carb, fat, protein];
+}
 ////////// PROBLEM 5 //////////
 
 /*
@@ -86,7 +89,10 @@ function totalPopulation(obj) {
 */
 
 //Code Here
-
+function largeNumbers(obj) {
+  let { first, second, third } = obj;
+  return Math.min(first, second, third);
+}
 ////////// PROBLEM 6 //////////
 
 /*
@@ -96,3 +102,13 @@ function totalPopulation(obj) {
 */
 
 //Code Here
+function numberGroups(obj) {
+  let { a, b, c } = obj;
+  if (a > b && a > c) {
+    return a;
+  } else if (b > a && b > c) {
+    return b;
+  } else {
+    return c;
+  }
+}
